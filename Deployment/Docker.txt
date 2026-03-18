@@ -77,6 +77,28 @@ docker run -p 8080:8080 karanamharish18/myimage:latest
 
 http://localhost:8080/getData
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Run a Container
+docker run nginx
+
+Run in Background
+docker run -d nginx
+
+List Containers
+docker ps        # running
+docker ps -a     # all
+
+Stop & Remove
+docker stop <container_id>
+docker rm <container_id>
+
+Port Mapping
+
+Expose container port to host:
+
+docker run -p 8080:80 nginx
+
 
 
 

@@ -93,7 +93,7 @@ git push
 
 
 -----------------------------------------------------------
-ng new Frontendapp --standalone=false
+
 >>CSS >>No>>None
 cd Frontendapp
 code .
@@ -109,7 +109,8 @@ app roting module.ts
 
 (routerlink instead of href)
 
-
+-------------------------------------------------------------------------------------------------------------------------------
+Angular is a TypeScript-based front-end framework developed by Google for building single-page applications (SPA).
 
 ------------------------------------------------------------------------------------------
 Components  in Angular
@@ -207,7 +208,7 @@ Step 4: Add Login Logic
 
 ---------------------------------------------------------------------------------------------
 
-binding (refer this (interpolation, eent binding, property binding))
+binding (refer this (interpolation, event binding, property binding))
 
 Data Binding in Angular
 1. Introduction
@@ -270,10 +271,12 @@ Syntax:
 
 Example:
 
+html
 <input [(ngModel)]="username">
 <p>You typed: {{ username }}</p>
 
-
+ts 
+var username: string="akhi";
 👉 For ngModel, you must import:
 
 import { FormsModule } from '@angular/forms';
@@ -282,6 +285,8 @@ Angular directives
 
 What Are Angular Directives?
 
+Directives are used to change the behavior or appearance of HTML elements.
+used to manipulate the dom
 Directives are special instructions in Angular that you apply to HTML elements to add behavior to them.
 
 Think of directives as commands that tell Angular:
@@ -616,3 +621,19 @@ Step 2: Create Route Guard (AuthGuard)
 Step 3: Apply Guard to Your Routes
 Step 4: Login Component Stores Token
 Step 5: Logout Clears Token
+
+--------------------------------------------------------------------------------------------
+
+INTERCEPTORS
+
+Interceptors are used to globally handle HTTP requests and responses.
+
+Interceptors sit between your app and the server and can:
+
+Modify HTTP requests
+
+Handle HTTP responses
+
+Catch errors globally
+
+They work only with HttpClient.
