@@ -21,3 +21,16 @@ public class BinarySearch {
     }
     
 }
+
+//another method 
+int [] num ={2,55,6,78,99,3};
+System.out.println(Arrays.toString(num));
+
+//sort the array
+Arrays.sort(num)
+System.out.println(Arrays.toString(num));
+
+//using binary search to find 55
+
+int index=Arrays.binarySearch(num, 55);
+System.out.println(index);
